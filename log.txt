@@ -1,0 +1,30 @@
+regression hsic linear
+regression_linear.py data/features_hsic_0.dat data/labels_0.dat data/predict_hsic_0.dat 0.0462957047621
+regression_linear.py data/features_hsic_1.dat data/labels_1.dat data/predict_hsic_1.dat 0.0619267723098
+regression_linear.py data/features_hsic_2.dat data/labels_2.dat data/predict_hsic_2.dat 0.119146367285
+regression_linear.py data/features_hsic_3.dat data/labels_3.dat data/predict_hsic_3.dat 0.108100811067
+regression hsic bayesian
+regression_bayesian.py data/features_hsic_0.dat data/labels_0.dat data/predict_hsic_0.dat 0.0574420849846
+regression_bayesian.py data/features_hsic_1.dat data/labels_1.dat data/predict_hsic_1.dat 0.0744427035158
+regression_bayesian.py data/features_hsic_2.dat data/labels_2.dat data/predict_hsic_2.dat 0.131973261761
+regression_bayesian.py data/features_hsic_3.dat data/labels_3.dat data/predict_hsic_3.dat 0.1292239022
+regression hsic dtree
+regression_dtree.py data/features_hsic_0.dat data/labels_0.dat data/predict_hsic_0.dat 0.0616359499887
+regression_dtree.py data/features_hsic_1.dat data/labels_1.dat data/predict_hsic_1.dat 0.0870560437385
+regression_dtree.py data/features_hsic_2.dat data/labels_2.dat data/predict_hsic_2.dat 0.225990113056
+regression_dtree.py data/features_hsic_3.dat data/labels_3.dat data/predict_hsic_3.dat 0.122724406103
+regression pca linear
+regression_linear.py data/features_pca.dat data/labels_0.dat data/predict_pca_0.dat 0.0525417950272
+regression_linear.py data/features_pca.dat data/labels_1.dat data/predict_pca_1.dat 0.0630462800532
+regression_linear.py data/features_pca.dat data/labels_2.dat data/predict_pca_2.dat 0.11837933335
+regression_linear.py data/features_pca.dat data/labels_3.dat data/predict_pca_3.dat 0.105251711141
+regression pca bayesian
+regression_bayesian.py data/features_pca.dat data/labels_0.dat data/predict_pca_0.dat 0.0598334909344
+regression_bayesian.py data/features_pca.dat data/labels_1.dat data/predict_pca_1.dat 0.0741352839217
+regression_bayesian.py data/features_pca.dat data/labels_2.dat data/predict_pca_2.dat 0.122554051214
+regression_bayesian.py data/features_pca.dat data/labels_3.dat data/predict_pca_3.dat 0.122681510711
+regression pca dtree
+regression_dtree.py data/features_pca.dat data/labels_0.dat data/predict_pca_0.dat 0.0547733949265
+regression_dtree.py data/features_pca.dat data/labels_1.dat data/predict_pca_1.dat 0.0922293538752
+regression_dtree.py data/features_pca.dat data/labels_2.dat data/predict_pca_2.dat 0.19924179118
+regression_dtree.py data/features_pca.dat data/labels_3.dat data/predict_pca_3.dat 0.0951762860752
