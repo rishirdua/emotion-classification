@@ -119,3 +119,95 @@ python regression_logistic.py "data/features_sampled.dat" "data/labels_1.dat" "p
 python regression_logistic.py "data/features_sampled.dat" "data/labels_2.dat" "predict/sampled_logistic_2.dat"
 python regression_logistic.py "data/features_sampled.dat" "data/labels_3.dat" "predict/sampled_logistic_3.dat"
 
+
+#generate accuracy files
+echo "generating raw files"
+echo "Linear" >results.dat
+python accuracy.py predict/hsic_linear_0.dat data/labels_test_0.dat 1 >>results.dat
+python accuracy.py predict/hsic_linear_1.dat data/labels_test_1.dat 2 >>results.dat
+python accuracy.py predict/hsic_linear_2.dat data/labels_test_2.dat 3 >>results.dat
+python accuracy.py predict/hsic_linear_3.dat data/labels_test_3.dat 4 >>results.dat
+
+echo "Bayesian" >>results.dat
+python accuracy.py predict/hsic_bayesian_0.dat data/labels_test_0.dat 1 >>results.dat
+python accuracy.py predict/hsic_bayesian_1.dat data/labels_test_1.dat 2 >>results.dat
+python accuracy.py predict/hsic_bayesian_2.dat data/labels_test_2.dat 3 >>results.dat
+python accuracy.py predict/hsic_bayesian_3.dat data/labels_test_3.dat 4 >>results.dat
+
+echo "Dtree" >>results.dat
+python accuracy.py predict/hsic_dtree_0.dat data/labels_test_0.dat 1 >>results.dat
+python accuracy.py predict/hsic_dtree_1.dat data/labels_test_1.dat 2 >>results.dat
+python accuracy.py predict/hsic_dtree_2.dat data/labels_test_2.dat 3 >>results.dat
+python accuracy.py predict/hsic_dtree_3.dat data/labels_test_3.dat 4 >>results.dat
+
+echo "svr" >>results.dat
+python accuracy.py predict/hsic_svr_0.dat data/labels_test_0.dat 1 >>results.dat
+python accuracy.py predict/hsic_svr_1.dat data/labels_test_1.dat 2 >>results.dat
+python accuracy.py predict/hsic_svr_2.dat data/labels_test_2.dat 3 >>results.dat
+python accuracy.py predict/hsic_svr_3.dat data/labels_test_3.dat 4 >>results.dat
+
+echo "logistic" >>results.dat
+python accuracy.py predict/hsic_logistic_0.dat data/labels_test_0.dat 1 >>results.dat
+python accuracy.py predict/hsic_logistic_1.dat data/labels_test_1.dat 2 >>results.dat
+python accuracy.py predict/hsic_logistic_2.dat data/labels_test_2.dat 3 >>results.dat
+python accuracy.py predict/hsic_logistic_3.dat data/labels_test_3.dat 4 >>results.dat
+
+echo "Linear" >>results.dat
+python accuracy.py predict/sampled_linear_0.dat data/labels_test_0.dat 1 >>results.dat
+python accuracy.py predict/sampled_linear_1.dat data/labels_test_1.dat 2 >>results.dat
+python accuracy.py predict/sampled_linear_2.dat data/labels_test_2.dat 3 >>results.dat
+python accuracy.py predict/sampled_linear_3.dat data/labels_test_3.dat 4 >>results.dat
+
+echo "Bayesian" >>results.dat
+python accuracy.py predict/sampled_bayesian_0.dat data/labels_test_0.dat 1 >>results.dat
+python accuracy.py predict/sampled_bayesian_1.dat data/labels_test_1.dat 2 >>results.dat
+python accuracy.py predict/sampled_bayesian_2.dat data/labels_test_2.dat 3 >>results.dat
+python accuracy.py predict/sampled_bayesian_3.dat data/labels_test_3.dat 4 >>results.dat
+
+echo "Dtree" >>results.dat
+python accuracy.py predict/sampled_dtree_0.dat data/labels_test_0.dat 1 >>results.dat
+python accuracy.py predict/sampled_dtree_1.dat data/labels_test_1.dat 2 >>results.dat
+python accuracy.py predict/sampled_dtree_2.dat data/labels_test_2.dat 3 >>results.dat
+python accuracy.py predict/sampled_dtree_3.dat data/labels_test_3.dat 4 >>results.dat
+
+echo "svr" >>results.dat
+python accuracy.py predict/sampled_svr_0.dat data/labels_test_0.dat 1 >>results.dat
+python accuracy.py predict/sampled_svr_1.dat data/labels_test_1.dat 2 >>results.dat
+python accuracy.py predict/sampled_svr_2.dat data/labels_test_2.dat 3 >>results.dat
+python accuracy.py predict/sampled_svr_3.dat data/labels_test_3.dat 4 >>results.dat
+
+echo "logistic" >>results.dat
+python accuracy.py predict/sampled_logistic_0.dat data/labels_test_0.dat 1 >>results.dat
+python accuracy.py predict/sampled_logistic_1.dat data/labels_test_1.dat 2 >>results.dat
+python accuracy.py predict/sampled_logistic_2.dat data/labels_test_2.dat 3 >>results.dat
+python accuracy.py predict/sampled_logistic_3.dat data/labels_test_3.dat 4 >>results.dat
+
+echo "Linear" >>results.dat
+python accuracy.py predict/rrt_linear_0.dat data/labels_test_0.dat 1 >>results.dat
+python accuracy.py predict/rrt_linear_1.dat data/labels_test_1.dat 2 >>results.dat
+python accuracy.py predict/rrt_linear_2.dat data/labels_test_2.dat 3 >>results.dat
+python accuracy.py predict/rrt_linear_3.dat data/labels_test_3.dat 4 >>results.dat
+
+echo "Bayesian" >>results.dat
+python accuracy.py predict/rrt_bayesian_0.dat data/labels_test_0.dat 1 >>results.dat
+python accuracy.py predict/rrt_bayesian_1.dat data/labels_test_1.dat 2 >>results.dat
+python accuracy.py predict/rrt_bayesian_2.dat data/labels_test_2.dat 3 >>results.dat
+python accuracy.py predict/rrt_bayesian_3.dat data/labels_test_3.dat 4 >>results.dat
+
+echo "Dtree" >>results.dat
+python accuracy.py predict/rrt_dtree_0.dat data/labels_test_0.dat 1 >>results.dat
+python accuracy.py predict/rrt_dtree_1.dat data/labels_test_1.dat 2 >>results.dat
+python accuracy.py predict/rrt_dtree_2.dat data/labels_test_2.dat 3 >>results.dat
+python accuracy.py predict/rrt_dtree_3.dat data/labels_test_3.dat 4 >>results.dat
+
+echo "svr" >>results.dat
+python accuracy.py predict/rrt_svr_0.dat data/labels_test_0.dat 1 >>results.dat
+python accuracy.py predict/rrt_svr_1.dat data/labels_test_1.dat 2 >>results.dat
+python accuracy.py predict/rrt_svr_2.dat data/labels_test_2.dat 3 >>results.dat
+python accuracy.py predict/rrt_svr_3.dat data/labels_test_3.dat 4 >>results.dat
+
+echo "logistic" >>results.dat
+python accuracy.py predict/rrt_logistic_0.dat data/labels_test_0.dat 1 >>results.dat
+python accuracy.py predict/rrt_logistic_1.dat data/labels_test_1.dat 2 >>results.dat
+python accuracy.py predict/rrt_logistic_2.dat data/labels_test_2.dat 3 >>results.dat
+python accuracy.py predict/rrt_logistic_3.dat data/labels_test_3.dat 4 >>results.dat
