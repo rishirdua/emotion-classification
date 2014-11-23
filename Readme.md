@@ -6,8 +6,8 @@ Supervisor: Dr. Jayadeva
 
 Authors
 -------
-Rishi Dua <http://github.com/rishirdua>
-TV Ashok <http://github.com/tvashok>
+- Rishi Dua <http://github.com/rishirdua>
+- T Veeranjaneya Ashok <http://github.com/tvashok>
 
 Install
 -------
@@ -25,4 +25,4 @@ Contribute
 
 License
 -------
-This project is licensed under the terms of the MIT license. See LCENCE.txt for details
+This project is licensed under the terms of the MIT license. See LICENSE.txt for details
